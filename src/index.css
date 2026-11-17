@@ -11,7 +11,7 @@
   --text-primary: #F5F5F5;
   --text-secondary: #B3B3B3;
 
-  --button-bg: #D4A373;
+  --button-bg: #cf965e;
   --button-hover-bg: #C18F60;
   --button-active: #d69e69;
   --heading: #C18F60;
@@ -231,17 +231,32 @@ section {
 }
 
 /* Buttons */
-.btn-secondary {
+.btn-secondary, .btn-primary {
   color: var(--text-primary);
   border: 2px solid var(--border);
   box-shadow: 0 0 10px var(--border);
-  background-color: var(--body-bg);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
   padding:5px 10px;
   border-radius: 5px;
   font-size: 16px;
+}
+
+.btn-primary{
+  background-color: var(--button-bg);
+}
+
+.btn-primary:hover{
+  background-color: var(--button-hover-bg);
+}
+
+.btn-primary:active, .btn-primary:focus{
+  background-color: var(--button-active);
+}
+
+.btn-secondary{
+  background-color: var(--body-bg);
 }
 
 .btn-secondary:hover{

@@ -51,7 +51,7 @@ export default function Home({ data, search }) {
             <div className="text-center mb-4">
               <span>
                 <i className="heading fa-solid fa-magnifying-glass fs-1 pe-5"></i>
-                No results found for {search}. Try again with different keywords
+                No results found for {search}
               </span>
             </div>
           ) : (
