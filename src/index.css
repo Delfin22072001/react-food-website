@@ -233,7 +233,7 @@ section {
 /* Buttons */
 .btn-secondary {
   color: var(--text-primary);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   box-shadow: 0 0 10px var(--border);
   background-color: var(--body-bg);
   text-transform: uppercase;
@@ -241,6 +241,7 @@ section {
   text-decoration: none;
   padding:5px 10px;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .btn-secondary:hover{
@@ -286,7 +287,8 @@ section {
 }
 
 .contact-form {
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
+  box-shadow: 0 0 10px var(--border);
   border-radius: 10px;
   width: 100%;
   max-width: 400px;

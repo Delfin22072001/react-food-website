@@ -35,10 +35,10 @@ export default function Navbar({search, setSearch}) {
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
 
-          {/* <div className="icons">
-            <i className="fa-solid fa-cart-shopping fs-4"></i>
+          <div className="icons">
+            <i className="fa-solid fa-cart-shopping fs-4" onClick={() => navigate("/cart")}></i>
             <span className="cart-count"></span>
-          </div> */}
+          </div>
 
           <button
             className="navbar-toggler d-lg-none"
