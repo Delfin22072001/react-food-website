@@ -8,6 +8,7 @@ export default function Home({ data, search }) {
   const [form, setForm] = useState({ name: "", phone: "", message: "" })
   const [formMessage, setFormMessage] = useState("")
   const [error, setError] = useState("")
+  const [category, setCategory] = useState("All")
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -25,6 +26,12 @@ export default function Home({ data, search }) {
       setForm({ name: "", phone: "", message: "" })
     }
   }
+
+  const popularDishes = (e) =>{
+    setCategory(e.target.value)
+  }
+
+  const filteredData = category === "All" ? data : data.filter((dish) => dish.category === category)
 
   return (
     <>
@@ -47,17 +54,24 @@ export default function Home({ data, search }) {
       <section id="menu">
         <div className="container">
           <h2 className="heading text-center mb-5">Popular Dishes</h2>
+          <div className="category-options d-flex justify-content-center flex-wrap mb-5 gap-2">
+            <button value="All" onClick={popularDishes}>All</button>
+            <button value="Starters" onClick={popularDishes}>Starters</button>
+            <button value="Crab & Lobster" onClick={popularDishes}>Crab & Lobster</button>
+            <button value="Fish" onClick={popularDishes}>Fish</button>
+            <button value="Prawns" onClick={popularDishes}>Prawns</button>
+          </div>
           {data.length === 0 ? (
-            <div className="text-center mb-4">
+            <div className="text-center">
               <span>
-                <i className="heading fa-solid fa-magnifying-glass fs-1 pe-5"></i>
+                <i className="heading fa-solid fa-magnifying-glass fs-3 pe-5"></i>
                 No results found for {search}
               </span>
             </div>
           ) : (
-            <div className="d-flex flex-wrap justify-content-center gap-4">
+            <div className="d-flex flex-wrap justify-content-center gap-3">
               {
-                data.map((dish, _) => (
+                filteredData.map((dish, _) => (
                   <div className="card" key={dish.id} >
                     <Card {...dish} />
                   </div>

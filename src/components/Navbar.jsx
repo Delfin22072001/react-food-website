@@ -18,7 +18,7 @@ export default function Navbar({search, setSearch}) {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
 
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand fs-3" href="/">
           SeaDrop
         </a>
 
@@ -34,11 +34,11 @@ export default function Navbar({search, setSearch}) {
           >
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
-{/* 
+
           <div className="icons">
             <i className="fa-solid fa-cart-shopping fs-4" onClick={() => navigate("/cart")}></i>
             <span className="cart-count"></span>
-          </div> */}
+          </div>
 
           <button
             className="navbar-toggler d-lg-none"
