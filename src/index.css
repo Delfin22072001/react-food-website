@@ -214,19 +214,15 @@ section {
 
 .card {
   background-color: var(--section-bg);
-  border: 2px solid var(--border);
+  border: 2px solid rgba(95, 93, 93, 0.5);
   color: var(--text-primary);
-  min-width: 260px;
+  min-width: 300px;
 }
 
 .card img {
   height: 180px;
   object-fit: cover;
   object-position: center;
-}
-
-.card:hover {
-  box-shadow: 0 0 10px var(--border);
 }
 
 .category-options button{
@@ -254,14 +250,14 @@ section {
 /* Buttons */
 .btn-secondary, .btn-primary {
   color: var(--text-primary);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   box-shadow: 0 0 10px var(--border);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
   padding:5px 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn-primary{
@@ -294,8 +290,8 @@ section {
 
 /* home page */
 .hero-page {
-  min-height: 80vh;
-  display: flex;
+  min-height: 75vh;
+  margin-top:90px;
 }
 
 .hero-text {
@@ -324,8 +320,7 @@ section {
 }
 
 .contact-form {
-  border: 2px solid var(--border);
-  box-shadow: 0 0 10px var(--border);
+  border: 1px solid var(--border);
   border-radius: 10px;
   width: 100%;
   max-width: 400px;

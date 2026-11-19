@@ -39,8 +39,8 @@ export default function Home({ data, search }) {
         <div className="row align-items-center">
           <div className="col-md-6">
             <h5 className="hero-text">Welcome to SeaDrop</h5>
-            <h1 className="display-3">Where Every Meal Feels Like Home</h1>
-            <p>From our kitchen to your table, every dish is made from fresh local ingredients and recipes passed down through generations. Come hungry, leave happy.</p>
+            <h1 className="display-2">Where Every Meal Feels Like Home</h1>
+            <p className="mt-3">From our kitchen to your table, every dish is made from fresh local ingredients and recipes passed down through generations. Come hungry, leave happy.</p>
             <div className="d-flex gap-2">
               <a href="#menu" className="btn-primary">View Menu</a>
             </div>

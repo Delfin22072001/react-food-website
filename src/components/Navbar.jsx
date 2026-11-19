@@ -57,7 +57,7 @@ export default function Navbar({search, setSearch}) {
         <div className="collapse navbar-collapse d-none d-lg-flex">
           <ul className="navbar-nav m-auto">
             <li className="nav-item">
-              <a className="nav-link active" onClick={() => navigate("/")}>Home</a>
+              <a className="nav-link active" id="nav-link-active" onClick={() => navigate("/")}>Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#menu">Menu</a>
