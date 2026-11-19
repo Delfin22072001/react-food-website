@@ -294,7 +294,8 @@ section {
 
 /* home page */
 .hero-page {
-  min-height: 75vh;
+  min-height: 80vh;
+  display: flex;
 }
 
 .hero-text {
@@ -419,6 +420,10 @@ textarea::placeholder {
   .contact-form input,
   .contact-form textarea {
     min-width: 250px;
+  }
+
+  .category-options button{
+    width:100%;
   }
 
   .card{

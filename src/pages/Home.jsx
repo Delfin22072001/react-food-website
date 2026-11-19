@@ -27,7 +27,7 @@ export default function Home({ data, search }) {
     }
   }
 
-  const popularDishes = (e) =>{
+  const popularDishes = (e) => {
     setCategory(e.target.value)
   }
 
@@ -35,14 +35,14 @@ export default function Home({ data, search }) {
 
   return (
     <>
-      <section className="container mt-5 pt-5 hero-page" id="home">
+      <section className="container hero-page" id="home">
         <div className="row align-items-center">
           <div className="col-md-6">
             <h5 className="hero-text">Welcome to SeaDrop</h5>
             <h1 className="display-3">Where Every Meal Feels Like Home</h1>
             <p>From our kitchen to your table, every dish is made from fresh local ingredients and recipes passed down through generations. Come hungry, leave happy.</p>
             <div className="d-flex gap-2">
-              <a href="#menu" className="btn-secondary">View Menu</a>
+              <a href="#menu" className="btn-primary">View Menu</a>
             </div>
           </div>
           <div className="image col-md-6">
@@ -106,7 +106,7 @@ export default function Home({ data, search }) {
               <input type="text" name="name" placeholder="Name" value={form.name} onChange={handleChange} />
               <input type="tel" name="phone" placeholder="Phone Number" value={form.phone} onChange={handleChange} />
               <textarea name="message" placeholder="Your Message" rows={3} value={form.message} onChange={handleChange}></textarea>
-              <button className="btn-secondary w-100">Send</button>
+              <button className="btn-primary w-100">Send</button>
               <div className="text-center mt-3">
                 <span className="form-message">{formMessage}</span>
                 <span className="error-message">{error}</span>
